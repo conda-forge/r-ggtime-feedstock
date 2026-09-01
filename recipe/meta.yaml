@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggtime_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggtime/ggtime_{{ version }}.tar.gz
-  sha256: cab7877700f0f0a08d0eb9a5fff57d28ec8ca32cfb34e3c83e29b7f100320f70
+  sha256: 7d6ef0896236c6282993ed2b1e50a5fc4d907af87b0caacc22dbaac8a9d04900
 
 build:
   number: 0
@@ -63,12 +63,8 @@ test:
 about:
   home: https://pkg.mitchelloharawild.com/ggtime/
   license: GPL-3.0-or-later
-  summary: Extends the capabilities of 'ggplot2' by providing grammatical elements and plot helpers
-    designed for visualizing temporal patterns. The package implements a grammar of
-    temporal graphics, which leverages calendar structures to highlight changes over
-    time. The package also provides plot helper functions to quickly produce commonly
-    used time series graphics, including time plots, season plots, and seasonal sub-series
-    plots.
+  summary: Extends the capabilities of 'ggplot2' by providing grammatical elements and plot helpers designed for visualizing temporal patterns. The package implements a grammar of temporal graphics, which leverages calendar structures to highlight changes over time. The package also provides plot helper functions to 
+    quickly produce commonly used time series graphics, including time plots, season plots, and seasonal sub-series plots.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
